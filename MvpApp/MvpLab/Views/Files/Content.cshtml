@@ -1,0 +1,11 @@
+﻿@model System.Collections.IEnumerable
+@{
+    ViewBag.Title = "Content";
+    string content = Model.ToString();
+}
+
+<h2>Content</h2>
+@foreach (var file in Model)
+{
+    <p>@file</p>
+}
